@@ -130,3 +130,30 @@ function showRegion(regionId, button) {
   document.getElementById(regionId).classList.add("active-region");
   button.classList.add("active");
 }
+function showRegionAndScroll(regionId) {
+  document.querySelectorAll(".region-detail").forEach(region => {
+    region.classList.remove("active-region");
+  });
+
+  document.querySelectorAll(".region-tab-buttons button").forEach(button => {
+    button.classList.remove("active");
+
+    if (
+      button.textContent.toLowerCase().includes(regionId) ||
+      (regionId === "uk" && button.textContent.includes("United Kingdom")) ||
+      (regionId === "usa" && button.textContent.includes("United States")) ||
+      (regionId === "gulf" && button.textContent.includes("Gulf")) ||
+      (regionId === "egypt" && button.textContent.includes("Egypt")) ||
+      (regionId === "canada" && button.textContent.includes("Canada"))
+    ) {
+      button.classList.add("active");
+    }
+  });
+
+  document.getElementById(regionId).classList.add("active-region");
+
+  document.getElementById("regions").scrollIntoView({
+    behavior: "smooth",
+    block: "start"
+  });
+}
