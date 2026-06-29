@@ -98,3 +98,15 @@ line-height:0.95;font-weight:700;}.hero-panel{padding:18px}.region-header{flex-d
 .consultation-option{
   display:block !important;
 }
+/* Reduce consultation section height */
+#consultation{
+  padding-bottom:80px !important;
+}
+
+#consultation .consultation-step{
+  min-height:auto !important;
+}
+
+#consultation .consultation-grid{
+  margin-bottom:30px !important;
+}
