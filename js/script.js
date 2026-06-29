@@ -52,21 +52,32 @@ function showRegionAndScroll(regionId){
 }
 
 function nextStep(stepNumber){
-  document.querySelectorAll('.consultation-step').forEach(step=>{
-    step.classList.remove('active-step');
-  });
 
-  const next = document.getElementById('step'+stepNumber);
-  if(next) next.classList.add('active-step');
+    // Hide all consultation steps
+    document.querySelectorAll('.consultation-step').forEach(step=>{
+        step.classList.remove('active-step');
+    });
 
-  document.querySelectorAll('.progress-dot').forEach((dot,index)=>{
-    dot.classList.toggle('active-dot', index < stepNumber);
-  });
+    // Show the selected step
+    const next=document.getElementById('step'+stepNumber);
+    if(next){
+        next.classList.add('active-step');
+    }
 
-  document.getElementById('consultation').scrollIntoView({
-    behavior:'smooth',
-    block:'start'
-  });
+    // Update progress dots
+    document.querySelectorAll('.progress-dot').forEach((dot,index)=>{
+        if(index < stepNumber){
+            dot.classList.add('active-dot');
+        }else{
+            dot.classList.remove('active-dot');
+        }
+    });
+
+    // Smooth scroll to the top of the consultation section
+    document.getElementById('consultation').scrollIntoView({
+        behavior:'smooth',
+        block:'start'
+    });
 }
 
 document.querySelectorAll('.consultation-option').forEach(option=>{
