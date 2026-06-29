@@ -110,3 +110,38 @@ line-height:0.95;font-weight:700;}.hero-panel{padding:18px}.region-header{flex-d
 #consultation .consultation-grid{
   margin-bottom:30px !important;
 }
+/* ===== Consultation Progress ===== */
+
+.wizard-progress{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:14px;
+    margin:30px 0 50px;
+}
+
+.progress-dot{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    border:2px solid #d8dce6;
+    background:#ffffff;
+    color:#8b94a8;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:700;
+    transition:.3s ease;
+}
+
+.progress-dot.active-dot{
+    background:var(--gold);
+    border-color:var(--gold);
+    color:#ffffff;
+}
+
+.progress-line{
+    width:60px;
+    height:2px;
+    background:#d8dce6;
+}
