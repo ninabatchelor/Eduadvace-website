@@ -1362,3 +1362,7 @@ body {
 .testimonials .container {
   overflow: hidden;
 }
+.logo img{
+    height:90px;
+    width:auto;
+}
