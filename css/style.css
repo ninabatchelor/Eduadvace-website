@@ -4,6 +4,16 @@ Professional Stylesheet
 Version 1.0
 ==================================================*/
 
+:root{
+
+--cream:#F8F5EF;
+--navy:#0B2C52;
+--gold:#C9A227;
+--light-blue:#0056b3;
+--dark:#061d36;
+--white:#FFFFFF;
+
+}
 
 /*=============
 RESET
@@ -27,7 +37,7 @@ font-size:16px;
 
 line-height:1.7;
 
-background:#ffffff;
+background:#F8F5EF;
 
 color:#333;
 
@@ -142,7 +152,7 @@ left:0;
 
 width:100%;
 
-background:#ffffff;
+background:#F8F5EF;
 
 box-shadow:0 5px 20px rgba(0,0,0,.08);
 
@@ -192,7 +202,7 @@ font-weight:500;
 
 nav a:hover{
 
-color:#0056b3;
+color:#C9A227;
 
 }
 
@@ -365,7 +375,7 @@ INTRODUCTION
 
 padding:120px 0;
 
-background:#ffffff;
+background:#F8F5EF;
 
 }
 
@@ -473,7 +483,7 @@ gap:35px;
 
 .service-card{
 
-background:#ffffff;
+background:#F8F5EF;
 
 padding:40px;
 
@@ -528,7 +538,7 @@ WHY US
 
 padding:120px 0;
 
-background:#ffffff;
+background:#F8F5EF;
 
 }
 
@@ -647,7 +657,7 @@ CURRICULUM
 
 padding:120px 0;
 
-background:#ffffff;
+background:#F8F5EF;
 
 }
 
@@ -665,7 +675,7 @@ margin-top:60px;
 
 .curriculum-card{
 
-background:#ffffff;
+background:#F8F5EF;
 
 padding:40px;
 
@@ -754,7 +764,7 @@ gap:25px;
 
 .feature-box{
 
-background:#ffffff;
+background:#F8F5EF;
 
 padding:30px;
 
@@ -799,7 +809,7 @@ OUR APPROACH
 
 padding:120px 0;
 
-background:#ffffff;
+background:#F8F5EF;
 
 }
 
@@ -923,7 +933,7 @@ BENEFITS
 
 padding:120px 0;
 
-background:#ffffff;
+background:#F8F5EF;
 
 }
 
@@ -941,7 +951,7 @@ margin-top:60px;
 
 .benefit-card{
 
-background:#ffffff;
+background:#F8F5EF;
 
 padding:35px;
 
@@ -1000,7 +1010,7 @@ margin-top:60px;
 }
 
 .testimonial-card{
-background:#ffffff;
+background:#F8F5EF;
 padding:40px;
 border-radius:15px;
 box-shadow:0 10px 35px rgba(0,0,0,.08);
@@ -1044,7 +1054,7 @@ CONTACT
 
 .contact{
 padding:120px 0;
-background:#ffffff;
+background:#F8F5EF;
 }
 
 .contact-wrapper{
