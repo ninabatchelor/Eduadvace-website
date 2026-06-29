@@ -106,3 +106,15 @@ sections.forEach(section => {
     observer.observe(section);
 
 });
+function showRegion(regionId) {
+  document.querySelectorAll(".region-detail").forEach(region => {
+    region.classList.remove("active-region");
+  });
+
+  document.querySelectorAll(".region-tab-buttons button").forEach(button => {
+    button.classList.remove("active");
+  });
+
+  document.getElementById(regionId).classList.add("active-region");
+  event.target.classList.add("active");
+}
