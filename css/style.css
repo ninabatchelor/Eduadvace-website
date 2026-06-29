@@ -673,3 +673,28 @@ footer{
 .journey-card p{
   color:var(--muted);
 }
+/* ===========================
+   FRAMEWORK CARDS POLISH
+=========================== */
+
+#frameworks .service-card{
+  position:relative;
+  padding-top:58px;
+}
+
+#frameworks .service-card::before{
+  content:"✓";
+  position:absolute;
+  top:22px;
+  left:30px;
+  width:28px;
+  height:28px;
+  border-radius:50%;
+  background:var(--gold);
+  color:#ffffff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:900;
+  font-size:15px;
+}
