@@ -118,3 +118,15 @@ function showRegion(regionId) {
   document.getElementById(regionId).classList.add("active-region");
   event.target.classList.add("active");
 }
+function showRegion(regionId, button) {
+  document.querySelectorAll(".region-detail").forEach(region => {
+    region.classList.remove("active-region");
+  });
+
+  document.querySelectorAll(".region-tab-buttons button").forEach(btn => {
+    btn.classList.remove("active");
+  });
+
+  document.getElementById(regionId).classList.add("active-region");
+  button.classList.add("active");
+}
