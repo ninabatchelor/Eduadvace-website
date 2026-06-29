@@ -1329,3 +1329,36 @@ body,
 h1, h2, h3, h4 {
   color: #0B2C52;
 }
+/* Fix sections cutting off on right side */
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.benefits-grid,
+.approach-grid,
+.testimonial-grid,
+.services-grid,
+.curriculum-grid {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)) !important;
+  width: 100%;
+}
+
+.benefit-card,
+.approach-card,
+.testimonial-card,
+.service-card,
+.curriculum-card {
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+.benefits .container,
+.services .container,
+.curriculum .container,
+.approach .container,
+.testimonials .container {
+  overflow: hidden;
+}
