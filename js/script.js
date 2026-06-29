@@ -1,159 +1,54 @@
-/* ==========================================
-   EduAdvance Website JavaScript
-========================================== */
-
-// Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener("click", function (e) {
-        e.preventDefault();
-
-        const target = document.querySelector(this.getAttribute("href"));
-
-        if (target) {
-            target.scrollIntoView({
-                behavior: "smooth",
-                block: "start"
-            });
-        }
-    });
-});
-
-// Header background on scroll
-const header = document.querySelector(".site-header");
-
-window.addEventListener("scroll", () => {
-
-    if (window.scrollY > 50) {
-        header.style.boxShadow = "0 8px 30px rgba(0,0,0,.12)";
-        header.style.padding = "0";
-    } else {
-        header.style.boxShadow = "0 3px 20px rgba(0,0,0,.08)";
-    }
-
-});
-
-// Fade-in animation
-const observer = new IntersectionObserver(entries => {
-
-    entries.forEach(entry => {
-
-        if (entry.isIntersecting) {
-
-            entry.target.style.opacity = "1";
-            entry.target.style.transform = "translateY(0px)";
-
-        }
-
-    });
-
-}, {
-    threshold: 0.15
-});
-
-document.querySelectorAll(".timeline-item, .service-card, .region-card, .region-tabs div")
-.forEach(card => {
-
-    card.style.opacity = "0";
-    card.style.transform = "translateY(40px)";
-    card.style.transition = "all .7s ease";
-
-    observer.observe(card);
-
-});
-
-// Region cards click effect
-document.querySelectorAll(".region-card").forEach(card => {
-
-    card.addEventListener("click", () => {
-
-        document.querySelectorAll(".region-card").forEach(c => {
-            c.style.borderColor = "#ececec";
-        });
-
-        card.style.borderColor = "#2563eb";
-
-    });
-
-});
-
-// Button hover animation
-document.querySelectorAll(".primary-btn, .secondary-btn, .nav-button")
-.forEach(button => {
-
-    button.addEventListener("mouseenter", () => {
-
-        button.style.transform = "translateY(-3px)";
-
-    });
-
-    button.addEventListener("mouseleave", () => {
-
-        button.style.transform = "translateY(0px)";
-
-    });
-
-});
-
-// Reveal sections
-const sections = document.querySelectorAll(".section");
-
-sections.forEach(section => {
-
-    section.style.opacity = "0";
-    section.style.transform = "translateY(50px)";
-    section.style.transition = "all .8s ease";
-
-    observer.observe(section);
-
-});
-function showRegion(regionId) {
-  document.querySelectorAll(".region-detail").forEach(region => {
-    region.classList.remove("active-region");
+  anchor.addEventListener('click', function(e){
+    const target = document.querySelector(this.getAttribute('href'));
+    if(target){e.preventDefault();target.scrollIntoView({behavior:'smooth',block:'start'});}
   });
+});
 
-  document.querySelectorAll(".region-tab-buttons button").forEach(button => {
-    button.classList.remove("active");
-  });
+const toggle = document.querySelector('.mobile-toggle');
+const nav = document.querySelector('.main-nav');
+if(toggle){toggle.addEventListener('click',()=>nav.classList.toggle('open'));}
 
-  document.getElementById(regionId).classList.add("active-region");
-  event.target.classList.add("active");
+function showRegion(regionId, button){
+  document.querySelectorAll('.region-detail').forEach(region=>region.classList.remove('active-region'));
+  document.querySelectorAll('.region-tab-buttons button').forEach(btn=>btn.classList.remove('active'));
+  const region = document.getElementById(regionId);
+  if(region) region.classList.add('active-region');
+  if(button) button.classList.add('active');
 }
-function showRegion(regionId, button) {
-  document.querySelectorAll(".region-detail").forEach(region => {
-    region.classList.remove("active-region");
-  });
 
-  document.querySelectorAll(".region-tab-buttons button").forEach(btn => {
-    btn.classList.remove("active");
+function showRegionAndScroll(regionId){
+  const buttons = document.querySelectorAll('.region-tab-buttons button');
+  buttons.forEach(button=>{
+    const txt = button.textContent.toLowerCase();
+    button.classList.remove('active');
+    if((regionId==='uk' && txt.includes('united kingdom')) || (regionId==='usa' && txt.includes('united states')) || txt.includes(regionId)) button.classList.add('active');
   });
-
-  document.getElementById(regionId).classList.add("active-region");
-  button.classList.add("active");
+  document.querySelectorAll('.region-detail').forEach(region=>region.classList.remove('active-region'));
+  const region = document.getElementById(regionId);
+  if(region) region.classList.add('active-region');
+  document.getElementById('regions').scrollIntoView({behavior:'smooth',block:'start'});
 }
-function showRegionAndScroll(regionId) {
-  document.querySelectorAll(".region-detail").forEach(region => {
-    region.classList.remove("active-region");
+
+function nextStep(stepNumber){
+  document.querySelectorAll('.consultation-step').forEach(step=>step.classList.remove('active-step'));
+  const next = document.getElementById('step'+stepNumber);
+  if(next) next.classList.add('active-step');
+  document.querySelectorAll('.progress-dot').forEach((dot,index)=>{
+    dot.classList.toggle('active-dot', index < stepNumber);
   });
-
-  document.querySelectorAll(".region-tab-buttons button").forEach(button => {
-    button.classList.remove("active");
-
-    if (
-      button.textContent.toLowerCase().includes(regionId) ||
-      (regionId === "uk" && button.textContent.includes("United Kingdom")) ||
-      (regionId === "usa" && button.textContent.includes("United States")) ||
-      (regionId === "gulf" && button.textContent.includes("Gulf")) ||
-      (regionId === "egypt" && button.textContent.includes("Egypt")) ||
-      (regionId === "canada" && button.textContent.includes("Canada"))
-    ) {
-      button.classList.add("active");
-    }
-  });
-
-  document.getElementById(regionId).classList.add("active-region");
-
-  document.getElementById("regions").scrollIntoView({
-    behavior: "smooth",
-    block: "start"
-  });
+  document.getElementById('consultation').scrollIntoView({behavior:'smooth',block:'start'});
 }
+
+document.querySelectorAll('.consultation-option').forEach(option=>{
+  option.addEventListener('click',()=>{
+    const grid = option.closest('.consultation-grid');
+    if(grid) grid.querySelectorAll('.consultation-option').forEach(o=>o.classList.remove('selected'));
+    option.classList.add('selected');
+  });
+});
+
+const observer = new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{if(entry.isIntersecting) entry.target.classList.add('visible');});
+},{threshold:.15});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
