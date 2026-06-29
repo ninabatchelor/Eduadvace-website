@@ -82,3 +82,19 @@ line-height:0.95;font-weight:700;}.hero-panel{padding:18px}.region-header{flex-d
 }
     transition:all .3s ease;
 }
+/* Fix consultation wizard visibility */
+.consultation-step{
+  display:none;
+}
+
+.consultation-step.active-step{
+  display:block !important;
+}
+
+.consultation-grid{
+  display:grid !important;
+}
+
+.consultation-option{
+  display:block !important;
+}
