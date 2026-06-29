@@ -351,7 +351,37 @@ a{text-decoration:none;color:inherit}
   gap:30px;
   margin-top:60px;
 }
+.cards-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:24px;
+    margin:40px 0;
+}
 
+.service-card{
+    background:#fff;
+    border:1px solid #dde4ec;
+    border-radius:20px;
+    padding:30px;
+    transition:.3s;
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+}
+
+.service-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 20px 45px rgba(0,0,0,.10);
+}
+
+.service-card h3{
+    color:var(--navy);
+    margin-bottom:18px;
+    font-size:26px;
+}
+
+.service-card p{
+    color:#5b6d7c;
+    line-height:1.8;
+}
 .stat-card{
   text-align:center;
   padding:45px 30px;
