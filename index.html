@@ -174,47 +174,53 @@
     </div>
   </div>
 </section>
-
 <section id="regions" class="section light">
   <p class="eyebrow blue">GLOBAL EXPERTISE</p>
   <h2>Global Expertise. Local Understanding.</h2>
 
   <p class="section-intro">
-    EduAdvance supports schools across five international education markets, helping institutions align strong local practice with internationally recognised standards.
+    Founded in the United Kingdom, EduAdvance is a specialist consultancy dedicated exclusively to schools. We help institutions establish strong foundations and achieve internationally recognised accreditation across British, Canadian, American and International Baccalaureate education systems.
   </p>
 
-  <div class="cards-grid">
-    <div class="service-card">
-      <h3>United Kingdom</h3>
-      <p><strong>Curricula:</strong> National Curriculum for England and International Baccalaureate.</p>
-      <p><strong>Accreditation:</strong> COBIS, CIS, BSO, ISI and Ofsted readiness.</p>
-    </div>
+  <div class="region-tab-buttons">
+    <button class="active" onclick="showRegion('uk', this)">United Kingdom</button>
+    <button onclick="showRegion('canada', this)">Canada</button>
+    <button onclick="showRegion('usa', this)">United States</button>
+    <button onclick="showRegion('gulf', this)">Gulf States</button>
+    <button onclick="showRegion('egypt', this)">Egypt</button>
+  </div>
 
-    <div class="service-card">
-      <h3>Canada</h3>
-      <p><strong>Provincial Curricula:</strong> Alberta Education, British Columbia Ministry of Education, Manitoba Education and Training, New Brunswick, Newfoundland and Labrador, Nova Scotia, Ontario, Prince Edward Island, Quebec and Saskatchewan.</p>
-      <p><strong>IB Programmes:</strong> IB PYP, IB MYP and IB DP.</p>
-    </div>
+  <div id="uk" class="region-detail active-region">
+    <h3>United Kingdom</h3>
+    <p><strong>Curricula:</strong> National Curriculum for England and International Baccalaureate.</p>
+    <p><strong>Accreditation:</strong> COBIS, CIS, BSO, ISI and Ofsted readiness.</p>
+  </div>
 
-    <div class="service-card">
-      <h3>United States</h3>
-      <p><strong>Curricula:</strong> American Curriculum and Advanced Placement.</p>
-      <p><strong>Accreditation:</strong> Cognia and WASC.</p>
-    </div>
+  <div id="canada" class="region-detail">
+    <h3>Canada</h3>
+    <p><strong>Provincial Curricula:</strong> Alberta Education, British Columbia Ministry of Education, Manitoba Education and Training, New Brunswick, Newfoundland and Labrador, Nova Scotia, Ontario, Prince Edward Island, Quebec and Saskatchewan.</p>
+    <p><strong>IB Programmes:</strong> IB PYP, IB MYP and IB DP.</p>
+  </div>
 
-    <div class="service-card">
-      <h3>Gulf States</h3>
-      <p><strong>Countries:</strong> UAE, Qatar, Saudi Arabia, Kuwait, Bahrain and Oman.</p>
-      <p><strong>Curricula:</strong> British, American, Canadian and IB schools.</p>
-    </div>
+  <div id="usa" class="region-detail">
+    <h3>United States</h3>
+    <p><strong>Curricula:</strong> American Curriculum and Advanced Placement.</p>
+    <p><strong>Accreditation:</strong> Cognia and WASC.</p>
+  </div>
 
-    <div class="service-card">
-      <h3>Egypt</h3>
-      <p><strong>Schools:</strong> International and national schools.</p>
-      <p><strong>Curricula:</strong> British, American, Canadian, IB and Egyptian National Curriculum.</p>
-    </div>
+  <div id="gulf" class="region-detail">
+    <h3>Gulf States</h3>
+    <p><strong>Countries:</strong> UAE, Qatar, Saudi Arabia, Kuwait, Bahrain and Oman.</p>
+    <p><strong>Curricula:</strong> British, American, Canadian and IB schools.</p>
+  </div>
+
+  <div id="egypt" class="region-detail">
+    <h3>Egypt</h3>
+    <p><strong>Schools:</strong> International and national schools.</p>
+    <p><strong>Curricula:</strong> British, American, Canadian, IB and Egyptian National Curriculum.</p>
   </div>
 </section>
+
 
 <section id="leadership" class="section light">
   <p class="eyebrow blue">OUR PEOPLE</p>
