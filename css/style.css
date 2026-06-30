@@ -247,10 +247,19 @@ a{text-decoration:none;color:inherit}
 }
 
 .cards-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:26px;
-  margin-top:45px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:26px;
+    margin-top:45px;
+    justify-content:center;
+}
+
+.cards-grid > :nth-child(5){
+    grid-column:2;
+}
+
+.cards-grid > :nth-child(6){
+    grid-column:3;
 }
 
 .service-card,
