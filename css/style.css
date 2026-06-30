@@ -742,15 +742,21 @@ margin:0 auto 50px;
 text-align:center;
 }
 .logo-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:30px;
-margin-top:50px;
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:24px;
+    max-width:1400px;
+    margin:50px auto 0;
+    align-items:stretch;
 }
 
 .logo-card{
 background:#ffffff;
 padding:35px 25px;
+  display:flex;
+flex-direction:column;
+justify-content:space-between;
+height:100%;
 border-radius:18px;
 text-align:center;
 box-shadow:0 10px 30px rgba(0,0,0,.08);
