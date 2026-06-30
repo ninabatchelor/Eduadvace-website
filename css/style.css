@@ -999,3 +999,24 @@ opacity:0;
 transform:translateY(15px);
 }
 }
+/* ===== Smooth Section Reveal Animation ===== */
+
+.section,
+.service-card,
+.logo-card,
+.journey-card,
+.stat-card {
+    animation: fadeUp 0.8s ease both;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
