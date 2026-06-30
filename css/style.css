@@ -1129,3 +1129,15 @@ transform:translateY(15px);
 .usa-grid .service-card{
     height:100%;
 }
+/* Canada Region Cards */
+
+.canada-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+    margin-top:40px;
+}
+
+.canada-grid .service-card{
+    height:100%;
+}
