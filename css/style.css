@@ -717,7 +717,21 @@ footer{
   opacity:.45;
 }
 /* ===== Accreditation Logo Section ===== */
+.accreditation-logos{
+background:#f8f6f2;
+padding:110px 0;
+}
 
+.accreditation-logos h2{
+color:#0b2d52;
+margin-bottom:18px;
+}
+
+.accreditation-logos .section-intro{
+max-width:850px;
+margin:0 auto 50px;
+text-align:center;
+}
 .logo-grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
