@@ -784,3 +784,23 @@ max-width:900px;
 margin-left:auto;
 margin-right:auto;
 }
+/* Premium Accreditation Ribbon */
+
+.accreditation-ribbon{
+display:flex;
+justify-content:center;
+margin:45px 0 35px;
+}
+
+.accreditation-ribbon span{
+background:linear-gradient(135deg,#0b2d52,#174b83);
+color:#fff;
+padding:16px 34px;
+border-radius:999px;
+font-size:15px;
+font-weight:700;
+letter-spacing:.8px;
+text-transform:uppercase;
+border:3px solid #c8a44d;
+box-shadow:0 10px 30px rgba(11,45,82,.18);
+}
