@@ -1020,3 +1020,41 @@ transform:translateY(15px);
         transform: translateY(0);
     }
 }
+/* ===== Premium Navigation Upgrade ===== */
+
+.site-header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+    background:rgba(255,255,255,.92);
+    backdrop-filter:blur(16px);
+    -webkit-backdrop-filter:blur(16px);
+    box-shadow:0 8px 30px rgba(0,0,0,.08);
+}
+
+.nav-container{
+    max-width:1250px;
+    margin:0 auto;
+    padding:14px 5%;
+}
+
+.main-nav a{
+    position:relative;
+}
+
+.main-nav a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    width:0;
+    height:2px;
+    background:#c8a44d;
+    transition:.3s ease;
+}
+
+.main-nav a:hover::after{
+    width:100%;
+}
