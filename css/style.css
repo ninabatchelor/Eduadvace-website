@@ -1088,3 +1088,32 @@ transform:translateY(15px);
 .uk-grid .service-card{
     height:100%;
 }
+/* Gulf States Cards */
+
+.gulf-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    margin-top:40px;
+}
+
+.gulf-card{
+    min-height:260px;
+    transition:all .3s ease;
+}
+
+.gulf-card h3{
+    color:#112239;
+    font-size:30px;
+    margin-bottom:18px;
+}
+
+.gulf-card p{
+    line-height:1.8;
+    color:#5d6d83;
+}
+
+.gulf-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 50px rgba(17,34,57,.12);
+}
