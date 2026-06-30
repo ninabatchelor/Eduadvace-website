@@ -254,14 +254,6 @@ a{text-decoration:none;color:inherit}
     justify-content:center;
 }
 
-.cards-grid > :nth-child(5){
-    grid-column:2;
-}
-
-.cards-grid > :nth-child(6){
-    grid-column:3;
-}
-
 .service-card,
 .timeline-item,
 .region-detail,
