@@ -840,23 +840,25 @@ text-align:center;
 }
 
 .map-region-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-gap:18px;
-max-width:1000px;
-margin:45px auto 0;
-}
-
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:18px;
+    max-width:1000px;
+    margin:45px auto 0;
 .map-region-grid button{
-background:#0b2d52;
-color:#fff;
-border:none;
-padding:18px 22px;
-border-radius:14px;
-font-size:16px;
-font-weight:700;
-cursor:pointer;
-transition:all .3s ease;
+    background:#2f80ed;
+    color:#fff;
+    border:none;
+    padding:16px 28px;
+    border-radius:999px;
+    font-size:16px;
+    font-weight:700;
+    cursor:pointer;
+    transition:all .3s ease;
+    box-shadow:0 10px 25px rgba(47,128,237,.22);
+}
 box-shadow:0 10px 25px rgba(11,45,82,.15);
 }
 
