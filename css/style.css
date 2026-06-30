@@ -823,3 +823,36 @@ background:#c8a44d;
 color:#0b2d52;
 transform:translateY(-2px);
 }
+/* Global Map / Region Selector */
+
+.global-map-section{
+background:#ffffff;
+text-align:center;
+}
+
+.map-region-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:18px;
+max-width:1000px;
+margin:45px auto 0;
+}
+
+.map-region-grid button{
+background:#0b2d52;
+color:#fff;
+border:none;
+padding:18px 22px;
+border-radius:14px;
+font-size:16px;
+font-weight:700;
+cursor:pointer;
+transition:all .3s ease;
+box-shadow:0 10px 25px rgba(11,45,82,.15);
+}
+
+.map-region-grid button:hover{
+background:#c8a44d;
+color:#0b2d52;
+transform:translateY(-4px);
+}
