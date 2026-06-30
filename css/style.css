@@ -1141,3 +1141,10 @@ transform:translateY(15px);
 .canada-grid .service-card{
     height:100%;
 }
+.flag-icon{
+    width:32px;
+    height:auto;
+    vertical-align:middle;
+    margin-right:10px;
+    border-radius:3px;
+}
