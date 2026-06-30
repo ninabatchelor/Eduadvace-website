@@ -1223,5 +1223,25 @@ footer{
 .region-tab-buttons{
     grid-template-columns:1fr;
 }
+.gulf-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:28px;
+    margin-top:40px;
+}
 
+.gulf-card{
+    min-height:300px;
+    padding:34px;
+}
+
+.gulf-card h3{
+    font-size:28px;
+    line-height:1.3;
+    margin-bottom:20px;
+}
+
+.gulf-card p{
+    font-size:17px;
+    line-height:1.75;
 }
