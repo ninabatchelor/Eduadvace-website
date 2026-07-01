@@ -17,6 +17,8 @@
   font-size: clamp(3rem, 7vw, 6rem);
   line-height: 1;
   margin: 15px 0;
+  color: white;
+text-shadow: 0 4px 18px rgba(0,0,0,.45);
 }
 
 .consultation-hero p {
