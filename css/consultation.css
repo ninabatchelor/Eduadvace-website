@@ -247,3 +247,13 @@ button:hover, .thank-you a:hover {
 .nav-links a:hover{
     color:#d4aa4f;
 }
+/* Final hero polish */
+.consultation-hero h1 {
+  color: white;
+  text-shadow: 0 4px 18px rgba(0,0,0,.45);
+}
+
+.consultation-wrapper {
+  max-width: 1200px;
+  border-radius: 34px;
+}
