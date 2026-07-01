@@ -202,3 +202,46 @@ button:hover, .thank-you a:hover {
 .nav-links a:hover{
     color:#d4aa4f;
 }
+/* Navigation */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    background:#fff;
+    box-shadow:0 2px 12px rgba(0,0,0,.08);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    text-decoration:none;
+    color:#0a1f3d;
+    font-weight:700;
+    font-size:1.6rem;
+}
+
+.brand img{
+    width:55px;
+    height:55px;
+    object-fit:contain;
+}
+
+.nav-links{
+    display:flex;
+    gap:28px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#0a1f3d;
+    font-weight:600;
+}
+
+.nav-links a:hover{
+    color:#d4aa4f;
+}
