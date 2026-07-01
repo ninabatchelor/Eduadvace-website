@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EduAdvance | Consultation</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/consultation.css">
+</head>
+<body>
+<header class="hero">
+<h1>Book Your Complimentary Consultation</h1>
+<p>Complete this short assessment and one of our senior consultants will contact you.</p>
+</header>
+<main class="wizard">
+<div class="progress"><div class="bar"></div></div>
+
+<section class="step active">
+<h2>Step 1 – Service Required</h2>
+<div class="cards">
+<label><input type="radio" name="service"> School Foundation</label>
+<label><input type="radio" name="service"> School Improvement</label>
+<label><input type="radio" name="service"> Accreditation</label>
+<label><input type="radio" name="service"> Leadership Development</label>
+</div>
+<button class="next">Next</button>
+</section>
+
+<section class="step">
+<h2>Step 2 – Your School</h2>
+<input placeholder="School Name">
+<input placeholder="Country">
+<input placeholder="Curriculum">
+<button class="prev">Back</button>
+<button class="next">Next</button>
+</section>
+
+<section class="step">
+<h2>Step 3 – Contact Details</h2>
+<input placeholder="Name">
+<input placeholder="Email">
+<input placeholder="Phone">
+<textarea placeholder="Tell us about your project"></textarea>
+<button class="prev">Back</button>
+<button id="submit">Submit</button>
+</section>
+
+<section class="step">
+<h2>Thank you!</h2>
+<p>Your enquiry has been received.</p>
+<a href="index.html">Return Home</a>
+</section>
+</main>
+<script src="js/script.js"></script>
+<script src="js/consultation.js"></script>
+</body>
+</html>
