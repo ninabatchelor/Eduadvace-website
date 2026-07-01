@@ -1,0 +1,8 @@
+.hero{background:#0f2747;color:#fff;padding:60px 20px;text-align:center}
+.wizard{max-width:900px;margin:40px auto;padding:20px}
+.progress{height:8px;background:#ddd;border-radius:6px}.bar{height:8px;width:33%;background:#c7a54b}
+.step{display:none}.step.active{display:block}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px}
+.cards label{padding:20px;border:1px solid #ddd;border-radius:10px;cursor:pointer}
+button{background:#0f2747;color:#fff;padding:12px 24px;border:none;border-radius:6px;margin-top:15px}
+input,textarea{display:block;width:100%;margin:10px 0;padding:12px}
