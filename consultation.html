@@ -3,103 +3,44 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EduAdvance | Book a Consultation</title>
-
-  <link rel="stylesheet" href="/css/style.css" />
-  <link rel="stylesheet" href="/css/consultation.css" />
+  <title>Consultation | EduAdvance</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/consultation.css" />
 </head>
-
 <body>
-
-  <nav class="navbar">
-    <a href="/" class="brand">
-      <img src="/images/logo.png" alt="EduAdvance Logo">
-      <span>EduAdvance</span>
-    </a>
-
-    <div class="nav-links">
-      <a href="/#services">Services</a>
-      <a href="/#regions">Regions</a>
-      <a href="/#accreditation">Accreditation</a>
-      <a href="/#team">Our Team</a>
-      <a href="/consultation">Consultation</a>
-      <a href="/#contact">Contact</a>
-    </div>
-  </nav>
-
-  <header class="consultation-hero">
-    <div>
-      <p class="eyebrow">Complimentary School Consultation</p>
-      <h1>Tell us about your school.</h1>
-      <p>
-        Complete this short consultation form and one of our senior education consultants
-        will contact you to discuss how EduAdvance can support your school.
-      </p>
-    </div>
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="index.html" class="brand">
+        <img src="images/logo.png" alt="EduAdvance logo" />
+        <span>EduAdvance</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#regions">Regions</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main class="consultation-wrapper">
-    <div class="progress">
-      <div class="bar"></div>
-    </div>
-
-    <form id="consultationForm">
-
-      <section class="step active">
-        <h2>Step 1 — Service Required</h2>
-        <div class="cards">
-          <label><input type="radio" name="service" value="School Foundation"> School Foundation</label>
-          <label><input type="radio" name="service" value="School Improvement"> School Improvement</label>
-          <label><input type="radio" name="service" value="Accreditation"> Accreditation</label>
-          <label><input type="radio" name="service" value="Leadership Development"> Leadership Development</label>
-          <label><input type="radio" name="service" value="HR & Recruitment Support"> HR & Recruitment Support</label>
-          <label><input type="radio" name="service" value="Professional Workshops"> Professional Workshops</label>
-        </div>
-        <button type="button" class="next">Next</button>
-      </section>
-
-      <section class="step">
-        <h2>Step 2 — School Information</h2>
-        <input name="school" placeholder="School Name" required>
-        <input name="country" placeholder="Country" required>
-        <select name="curriculum">
-          <option value="">Curriculum / Framework</option>
-          <option>British / National Curriculum for England</option>
-          <option>International Baccalaureate</option>
-          <option>American / Advanced Placement</option>
-          <option>Canadian Curriculum</option>
-          <option>National Curriculum</option>
-          <option>Other</option>
-        </select>
-        <input name="students" placeholder="Approximate number of students">
-        <div class="buttons">
-          <button type="button" class="prev">Back</button>
-          <button type="button" class="next">Next</button>
-        </div>
-      </section>
-
-      <section class="step">
-        <h2>Step 3 — Contact Details</h2>
-        <input name="name" placeholder="Your Name" required>
-        <input name="email" type="email" placeholder="Email Address" required>
-        <input name="phone" placeholder="Phone / WhatsApp">
-        <textarea name="message" placeholder="Tell us briefly about your school, project, or support required"></textarea>
-
-        <div class="buttons">
-          <button type="button" class="prev">Back</button>
-          <button type="submit">Submit Enquiry</button>
-        </div>
-      </section>
-
-      <section class="step thank-you">
-        <h2>Thank you</h2>
-        <p>Your enquiry has been received. A senior EduAdvance consultant will contact you shortly.</p>
-        <a href="/">Return Home</a>
-      </section>
-
-    </form>
+  <main class="consultation-page">
+    <section class="section">
+      <div class="container consultation-box">
+        <p class="eyebrow">Request a Consultation</p>
+        <h1>Speak to EduAdvance</h1>
+        <p>
+          To request a consultation, please email us directly and include your school name, location, area of support required, and preferred contact details.
+        </p>
+        <a class="btn btn-primary" href="mailto:consultation@eduadvance.uk?subject=Consultation%20Request">Email consultation@eduadvance.uk</a>
+      </div>
+    </section>
   </main>
 
-  <script src="/js/consultation.js"></script>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 EduAdvance. All rights reserved.</p>
+      <p><a href="mailto:info@eduadvance.uk?subject=General%20Enquiry">info@eduadvance.uk</a></p>
+    </div>
+  </footer>
 </body>
 </html>
