@@ -1,46 +1,32 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Consultation | EduAdvance</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/consultation.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Request a consultation with EduAdvance.">
+  <title>Book a Consultation | EduAdvance</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/consultation.css">
 </head>
 <body>
-  <header class="site-header">
-    <nav class="navbar">
-      <a href="index.html" class="brand">
-        <img src="images/logo.png" alt="EduAdvance logo" />
-        <span>EduAdvance</span>
-      </a>
-      <ul class="nav-links">
-        <li><a href="index.html#about">About</a></li>
-        <li><a href="index.html#services">Services</a></li>
-        <li><a href="index.html#regions">Regions</a></li>
-        <li><a href="index.html#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main class="consultation-page">
-    <section class="section">
-      <div class="container consultation-box">
-        <p class="eyebrow">Request a Consultation</p>
-        <h1>Speak to EduAdvance</h1>
-        <p>
-          To request a consultation, please email us directly and include your school name, location, area of support required, and preferred contact details.
-        </p>
-        <a class="btn btn-primary" href="mailto:consultation@eduadvance.uk?subject=Consultation%20Request">Email consultation@eduadvance.uk</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© 2026 EduAdvance. All rights reserved.</p>
-      <p><a href="mailto:info@eduadvance.uk?subject=General%20Enquiry">info@eduadvance.uk</a></p>
-    </div>
-  </footer>
+<header class="site-header"><div class="navbar container"><a class="brand" href="index.html"><img src="images/logo.png" alt="EduAdvance logo"><span>EduAdvance</span></a><a class="back-link" href="index.html">← Back to website</a></div></header>
+<main class="consultation-page">
+  <section class="consultation-hero"><div class="container"><p class="eyebrow">Request a Consultation</p><h1>Tell us how we can support your school.</h1><p>Complete the details below. When you submit, your email application will open with the information prepared for you to send securely to EduAdvance.</p></div></section>
+  <section class="section"><div class="container consultation-layout">
+    <div class="consultation-info"><h2>What happens next?</h2><p>We review your request, identify the most suitable consultant and contact you to arrange an initial conversation.</p><ul><li>School foundation and growth</li><li>Accreditation and inspection readiness</li><li>Leadership, recruitment and school improvement</li><li>Curriculum, operations and technology</li></ul><p><strong>Direct email:</strong><br><a href="mailto:consultation@eduadvance.uk?subject=EduAdvance%20Consultation%20Request">consultation@eduadvance.uk</a></p></div>
+    <form id="consultationForm" class="consultation-form">
+      <div class="field-grid"><label>Full name<input required name="name" autocomplete="name"></label><label>Job title<input name="role" autocomplete="organization-title"></label></div>
+      <label>School or organisation<input required name="school" autocomplete="organization"></label>
+      <div class="field-grid"><label>Email address<input required type="email" name="email" autocomplete="email"></label><label>Phone number<input name="phone" autocomplete="tel"></label></div>
+      <div class="field-grid"><label>Country / region<input required name="region" id="regionField"></label><label>Preferred contact method<select name="contact"><option>Email</option><option>Phone</option><option>Video call</option></select></label></div>
+      <label>Area of support<select required name="service"><option value="">Please select</option><option>School foundation</option><option>Accreditation or inspection readiness</option><option>School improvement</option><option>Leadership coaching</option><option>Recruitment or interim placement</option><option>Curriculum development</option><option>Operations, technology or AI</option><option>Professional development</option><option>Other</option></select></label>
+      <label>How can we help?<textarea required name="message" rows="7"></textarea></label>
+      <button class="btn btn-primary" type="submit">Prepare Consultation Email</button>
+      <p class="form-note">Submitting does not send automatically. Your email application opens so you can review and send the message.</p>
+    </form>
+  </div></section>
+</main>
+<footer class="site-footer"><div class="container footer-inner"><p>© 2026 EduAdvance. All rights reserved.</p><a href="mailto:info@eduadvance.uk">info@eduadvance.uk</a></div></footer>
+<script src="js/consultation.js"></script>
 </body>
 </html>

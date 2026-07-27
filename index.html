@@ -1,358 +1,153 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="EduAdvance is an international education consultancy supporting school foundation, accreditation, leadership, recruitment and sustainable school improvement.">
   <title>EduAdvance | International Education Consultancy</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
 <header class="site-header">
-  <div class="nav-container">
-    <a href="#" class="logo-wrap">
-      <img src="images/logo.png" alt="EduAdvance Logo" class="logo-img">
-      <span class="logo-text">EduAdvance</span>
+  <div class="navbar container">
+    <a class="brand" href="index.html" aria-label="EduAdvance home">
+      <img src="images/logo.png" alt="EduAdvance logo">
+      <span>EduAdvance</span>
     </a>
-
-  <nav class="main-nav">
-    <a href="#services">Services</a>
-    <a href="#regions">Regions</a>
-    <a href="#accreditation">Accreditation</a>
-    <a href="#team">Our Team</a>
-    <a href="consultation.html">Consultation</a>
-    <a href="#contact">Contact</a>
-</nav>
-
-    <a href="consultation.html" class="nav-button">Book a Consultation</a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#services">Services</a>
+      <a href="#regions">Regions</a>
+      <a href="#accreditation">Accreditation</a>
+      <a href="#team">Our Team</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-cta" href="consultation.html">Book a Consultation</a>
+    </nav>
   </div>
 </header>
 
 <main>
-
-<section class="hero">
-  <div class="hero-content">
-    <div class="hero-left">
-      <span class="eyebrow">International Education Consultancy</span>
-      <h1>Empowering Schools. <span>Inspiring Excellence.</span></h1>
-      <p class="hero-text">
-        EduAdvance is a UK-founded specialist education consultancy supporting schools from foundation and strategic planning through to accreditation, leadership development, recruitment, school improvement and long-term transformation.
-      </p>
-      <br>
-      <a href="consultation.html" class="primary-btn">Start a Consultation</a>
+  <section class="hero">
+    <div class="container hero-content">
+      <p class="eyebrow">International Education Consultancy</p>
+      <h1>Empowering Schools.<br><span>Inspiring Excellence.</span></h1>
+      <p class="hero-copy">EduAdvance supports schools from foundation and strategic planning through accreditation, leadership development, recruitment, school improvement and long-term transformation.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="consultation.html">Start a Consultation</a>
+        <a class="btn btn-secondary" href="#services">Explore Our Services</a>
+      </div>
     </div>
+  </section>
 
-    <div class="hero-panel">
-      <h3>Global School Improvement Expertise</h3>
-      <p>
-        Supporting schools across the United Kingdom, Canada, the United States, the Gulf States and Egypt with internationally recognised standards, accreditation pathways and sustainable school improvement.
-      </p>
+  <section id="services" class="section">
+    <div class="container">
+      <p class="eyebrow">What We Do</p>
+      <h2>Strategic Support for Schools</h2>
+      <p class="section-intro">Practical, expert support designed around each school’s stage of development, curriculum and accreditation pathway.</p>
+      <div class="services-grid">
+        <article class="service-card"><h3>School Foundation</h3><p>From concept to opening: planning, systems, staffing, policies and operational readiness.</p></article>
+        <article class="service-card"><h3>School Improvement</h3><p>Evidence-informed strategies for leadership, teaching, learning, assessment and student outcomes.</p></article>
+        <article class="service-card"><h3>Accreditation Support</h3><p>Readiness for BSO, COBIS, CIS, Cognia, WASC, IB and national inspections.</p></article>
+        <article class="service-card"><h3>Executive Search &amp; Recruitment</h3><p>Recruitment of teachers, middle leaders, senior leaders, principals and executive leaders.</p></article>
+        <article class="service-card"><h3>Professional Workshops</h3><p>Bespoke training, leadership coaching and accredited or non-accredited professional learning.</p></article>
+        <article class="service-card"><h3>Interim Leadership</h3><p>Experienced leaders to support transition, inspection, growth and organisational change.</p></article>
+        <article class="service-card"><h3>Operations &amp; Technology</h3><p>Strategic planning, operational efficiency, budgeting and effective integration of technology and AI.</p></article>
+        <article class="service-card"><h3>Curriculum &amp; Resources</h3><p>Curriculum design, review, implementation and selection of high-quality learning materials.</p></article>
+      </div>
     </div>
-  </div>
+  </section>
 
-  <div class="scroll-indicator">
-    <span></span>
-    <p>Scroll to explore</p>
-  </div>
-</section>
-
-<section id="services" class="section">
-  <div class="container">
-    <span class="eyebrow">What We Do</span>
-    <h2>Strategic Support for Schools</h2>
-
-    <div class="cards-grid">
-
-      <div class="service-card">
-        <h3>School Foundation</h3>
-        <p>Helping investors and owners establish schools from concept to opening, including planning, systems, staffing and operational readiness.</p>
+  <section id="regions" class="section alt-section">
+    <div class="container">
+      <p class="eyebrow">Global Reach</p>
+      <h2>International Expertise, Local Understanding</h2>
+      <p class="section-intro">Select a region to see how EduAdvance supports schools in that context.</p>
+      <div class="region-buttons" role="tablist" aria-label="Regions">
+        <button class="region-btn active" type="button" role="tab" aria-selected="true" aria-controls="uk" data-region="uk">United Kingdom</button>
+        <button class="region-btn" type="button" role="tab" aria-selected="false" aria-controls="canada" data-region="canada">Canada</button>
+        <button class="region-btn" type="button" role="tab" aria-selected="false" aria-controls="usa" data-region="usa">United States</button>
+        <button class="region-btn" type="button" role="tab" aria-selected="false" aria-controls="gulf" data-region="gulf">Gulf States</button>
+        <button class="region-btn" type="button" role="tab" aria-selected="false" aria-controls="egypt" data-region="egypt">Egypt</button>
       </div>
 
-      <div class="service-card">
-        <h3>School Improvement</h3>
-        <p>Improving leadership, teaching, learning, assessment and student outcomes through evidence-informed improvement strategies.</p>
-      </div>
-
-      <div class="service-card">
-        <h3>Accreditation Support</h3>
-        <p>Preparing schools for BSO, COBIS, CIS, Cognia, WASC, IB and national inspections through strategic planning, compliance reviews and quality assurance.</p>
-      </div>
-
-      <div class="service-card">
-        <h3>Executive Search & Recruitment</h3>
-        <p>Recruiting exceptional teachers, middle and senior leaders, Headteachers, Principals and Executive Leaders while supporting strategic workforce planning.</p>
-      </div>
-
-      <div class="service-card">
-        <h3>Professional Workshops</h3>
-        <p>Delivering accredited and non-accredited professional learning, executive coaching, leadership development and bespoke training programmes.</p>
-      </div>
-
-      <div class="service-card">
-        <h3>Interim Executive Leadership</h3>
-        <p>Providing experienced Executive Heads, Principals, Heads of School and senior leaders to guide schools through transition, inspection and growth.</p>
-      </div>
-
-      <div class="service-card">
-        <h3>Operational Excellence & Technology</h3>
-        <p>Supporting school leaders with strategic planning, operational efficiency, finances and the effective integration of technology and AI.</p>
-      </div>
-
-      <div class="service-card">
-        <h3>Curriculum Development & Resources</h3>
-        <p>Designing, reviewing and implementing evidence-informed curricula and selecting high-quality resources aligned with international standards.</p>
-      </div>
-
+      <article id="uk" class="region-content active" role="tabpanel">
+        <h3>United Kingdom</h3><p>BSO inspection, COBIS compliance, English National Curriculum, safeguarding, governance and Department for Education expectations.</p>
+        <div class="region-grid"><div><strong>British Schools Overseas</strong><span>Inspection preparation and evidence review.</span></div><div><strong>COBIS Compliance</strong><span>Membership and quality-assurance readiness.</span></div><div><strong>Curriculum</strong><span>Alignment, assessment and academic review.</span></div><div><strong>Governance</strong><span>Policies, safeguarding and leadership standards.</span></div></div>
+        <a class="btn btn-primary" href="consultation.html?region=United%20Kingdom">Enquire about the UK</a>
+      </article>
+      <article id="canada" class="region-content" role="tabpanel" hidden>
+        <h3>Canada</h3><p>Support for provincial curricula, school leadership, international accreditation and quality assurance.</p>
+        <div class="region-grid"><div><strong>Provincial Curricula</strong><span>Support across Canadian provinces.</span></div><div><strong>IB Programmes</strong><span>PYP, MYP and DP implementation.</span></div><div><strong>Leadership</strong><span>Governance and school improvement.</span></div><div><strong>Growth</strong><span>Quality systems for sustainable development.</span></div></div>
+        <a class="btn btn-primary" href="consultation.html?region=Canada">Enquire about Canada</a>
+      </article>
+      <article id="usa" class="region-content" role="tabpanel" hidden>
+        <h3>United States</h3><p>American curriculum development, Cognia and WASC accreditation, leadership development and continuous improvement.</p>
+        <div class="region-grid"><div><strong>Cognia</strong><span>Readiness through Engagement Review.</span></div><div><strong>WASC</strong><span>Self-study and accreditation preparation.</span></div><div><strong>American Curriculum</strong><span>Standards, assessment and programme design.</span></div><div><strong>Quality Assurance</strong><span>Sustainable systems beyond accreditation.</span></div></div>
+        <a class="btn btn-primary" href="consultation.html?region=United%20States">Enquire about the USA</a>
+      </article>
+      <article id="gulf" class="region-content" role="tabpanel" hidden>
+        <h3>Gulf States</h3><p>Support across the UAE, Qatar, Saudi Arabia, Bahrain, Kuwait and Oman, combining international frameworks with local regulatory expectations.</p>
+        <div class="region-grid region-grid-six"><div><strong>UAE</strong><span>KHDA, ADEK and SPEA readiness.</span></div><div><strong>Qatar</strong><span>Compliance and improvement planning.</span></div><div><strong>Saudi Arabia</strong><span>MoE requirements and Vision 2030 alignment.</span></div><div><strong>Bahrain</strong><span>Foundation, governance and inspection.</span></div><div><strong>Kuwait</strong><span>Curriculum and accreditation support.</span></div><div><strong>Oman</strong><span>Leadership and quality assurance.</span></div></div>
+        <a class="btn btn-primary" href="consultation.html?region=Gulf%20States">Enquire about the Gulf</a>
+      </article>
+      <article id="egypt" class="region-content" role="tabpanel" hidden>
+        <h3>Egypt</h3><p>British, American and IB pathways alongside Ministry of Education compliance, governance and operational development.</p>
+        <div class="region-grid"><div><strong>British Accreditation</strong><span>BSO and COBIS preparation.</span></div><div><strong>American Accreditation</strong><span>Cognia and WASC readiness.</span></div><div><strong>International Baccalaureate</strong><span>Candidacy and authorisation support.</span></div><div><strong>Ministry Compliance</strong><span>Licensing, policies and governance.</span></div></div>
+        <a class="btn btn-primary" href="consultation.html?region=Egypt">Enquire about Egypt</a>
+      </article>
     </div>
-  </div>
-</section>
-<section id="regions" class="section global-map-section">
-  <div class="container">
-    <span class="eyebrow">Global Reach</span>
-    <h2>Supporting Schools Across Key International Regions</h2>
-    <p class="section-intro">
-      EduAdvance works with schools across the United Kingdom, Canada, the United States, the Gulf States and Egypt, combining global expertise with local understanding.
-    </p>
+  </section>
 
-    <div class="map-region-grid">
-      <button onclick="showRegionAndScroll('uk')">United Kingdom</button>
-      <button onclick="showRegionAndScroll('canada')">Canada</button>
-      <button onclick="showRegionAndScroll('usa')">United States</button>
-      <button onclick="showRegionAndScroll('gulf')">Gulf States</button>
-      <button onclick="showRegionAndScroll('egypt')">Egypt</button>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-
-    <div id="uk" class="region-detail">
-      <span class="eyebrow">United Kingdom</span>
-      <h3>🇬🇧 United Kingdom</h3>
-      <p>EduAdvance guides schools through British accreditation pathways including BSO inspection, COBIS compliance, the English National Curriculum, governance, safeguarding and Department for Education expectations.</p>
-
-      <div class="uk-grid">
-        <div class="service-card">
-          <h3>British Schools Overseas</h3>
-          <p>Support with BSO inspection preparation, compliance evidence, safeguarding, leadership, teaching quality and operational readiness.</p>
-        </div>
-        <div class="service-card">
-          <h3>COBIS Compliance</h3>
-          <p>Guidance with COBIS membership, quality assurance, school improvement and internationally recognised British school standards.</p>
-        </div>
-        <div class="service-card">
-          <h3>English National Curriculum</h3>
-          <p>Curriculum alignment, assessment design, teaching and learning review, leadership training and academic quality assurance.</p>
-        </div>
-        <div class="service-card">
-          <h3>UK DfE Standards</h3>
-          <p>Support with governance, safeguarding, policies, inspection expectations and the standards required of high-quality British schools.</p>
-        </div>
+  <section id="accreditation" class="section">
+    <div class="container">
+      <p class="eyebrow">Accreditation</p>
+      <h2>Recognised International Frameworks</h2>
+      <div class="logo-grid">
+        <div class="logo-card"><img src="images/bso.png" alt="BSO"><h3>BSO</h3></div>
+        <div class="logo-card"><img src="images/cobis.png" alt="COBIS"><h3>COBIS</h3></div>
+        <div class="logo-card"><img src="images/cis.png" alt="CIS"><h3>CIS</h3></div>
+        <div class="logo-card"><img src="images/cognia.png" alt="Cognia"><h3>Cognia</h3></div>
+        <div class="logo-card"><img src="images/wasc.png" alt="WASC"><h3>WASC</h3></div>
+        <div class="logo-card"><img src="images/ib.png" alt="IB"><h3>IB</h3></div>
       </div>
-
-      <a href="consultation.html" class="primary-btn">Enquire about United Kingdom</a>
     </div>
+  </section>
 
-    <div id="canada" class="region-detail">
-      <span class="eyebrow">Canada</span>
-      <h3>🇨🇦 Canada</h3>
-      <p>EduAdvance supports schools delivering Canadian education programmes across every province, helping schools establish high-quality learning, provincial curriculum alignment and international accreditation readiness.</p>
+  <section class="section stats-section">
+    <div class="container stats-grid">
+      <div><strong>23</strong><span>Consultants &amp; specialist staff</span></div>
+      <div><strong>5</strong><span>International regions</span></div>
+      <div><strong>12,000+</strong><span>Students supported</span></div>
+      <div><strong>4,200+</strong><span>Staff led and developed</span></div>
+    </div>
+  </section>
 
-      <div class="canada-grid">
-        <div class="service-card">
-          <h3>Provincial Curricula</h3>
-          <p>Support across Alberta, British Columbia, Manitoba, New Brunswick, Newfoundland & Labrador, Nova Scotia, Ontario, PEI, Quebec and Saskatchewan.</p>
-        </div>
-        <div class="service-card">
-          <h3>International Baccalaureate</h3>
-          <p>Full support for IB Primary Years Programme, Middle Years Programme and Diploma Programme implementation and authorisation.</p>
-        </div>
-        <div class="service-card">
-          <h3>School Leadership</h3>
-          <p>Leadership development, governance, teaching and learning, curriculum implementation, quality assurance and continuous school improvement.</p>
-        </div>
-        <div class="service-card">
-          <h3>Accreditation & Growth</h3>
-          <p>Preparing Canadian schools for international recognition while maintaining the standards expected of Canadian education.</p>
-        </div>
+  <section id="team" class="section alt-section">
+    <div class="container narrow">
+      <p class="eyebrow">Our Team</p>
+      <h2>Experienced Educational Leaders</h2>
+      <p class="section-intro">Our team includes former heads of school, principals, executive leaders, curriculum specialists and senior educational advisers with experience across multiple systems and regions.</p>
+      <a class="btn btn-primary" href="consultation.html">Discuss Your School’s Needs</a>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <p class="eyebrow">Contact</p>
+      <h2>Start the Conversation</h2>
+      <div class="contact-grid">
+        <a class="contact-card" href="mailto:info@eduadvance.uk?subject=EduAdvance%20General%20Enquiry"><strong>General enquiries</strong><span>info@eduadvance.uk</span></a>
+        <a class="contact-card" href="mailto:consultation@eduadvance.uk?subject=EduAdvance%20Consultation%20Request"><strong>Consultations</strong><span>consultation@eduadvance.uk</span></a>
+        <a class="contact-card" href="mailto:careers@eduadvance.uk?subject=EduAdvance%20Careers%20Enquiry"><strong>Careers</strong><span>careers@eduadvance.uk</span></a>
+        <a class="contact-card" href="https://www.linkedin.com/in/eduadvance-educational-consultancy-42b245420" target="_blank" rel="noopener"><strong>LinkedIn</strong><span>Follow EduAdvance</span></a>
       </div>
-
-      <a href="consultation.html" class="primary-btn">Enquire about Canada</a>
     </div>
-
-    <div id="usa" class="region-detail">
-      <span class="eyebrow">United States</span>
-      <h3>🇺🇸 United States</h3>
-      <p>EduAdvance supports schools with American curriculum development, Cognia accreditation preparation, Advanced Placement pathways, leadership development and continuous school improvement.</p>
-
-      <div class="usa-grid">
-        <div class="service-card">
-          <h3>Cognia Accreditation</h3>
-          <p>Complete support from readiness reviews and documentation through to the Engagement Review and accreditation outcome.</p>
-        </div>
-        <div class="service-card">
-          <h3>School Improvement Planning</h3>
-          <p>Standards-based improvement planning, evidence gathering, strategic leadership and measurable school improvement.</p>
-        </div>
-        <div class="service-card">
-          <h3>American Curriculum</h3>
-          <p>Curriculum implementation, assessment, Advanced Placement pathways and academic programme development.</p>
-        </div>
-        <div class="service-card">
-          <h3>Continuous Quality Assurance</h3>
-          <p>Helping schools establish sustainable systems that continue to improve long after accreditation has been achieved.</p>
-        </div>
-      </div>
-
-      <a href="consultation.html" class="primary-btn">Enquire about United States</a>
-    </div>
-
-    <div id="gulf" class="region-detail">
-      <span class="eyebrow">Gulf States</span>
-      <h3>🌍 Gulf States</h3>
-      <p>The Gulf region is home to one of the world's fastest-growing international school sectors. EduAdvance supports schools across the UAE, Qatar, Saudi Arabia, Bahrain, Kuwait and Oman.</p>
-
-      <div class="gulf-grid">
-        <div class="service-card gulf-card">
-          <h3>🇦🇪 United Arab Emirates</h3>
-          <p>KHDA, ADEK and SPEA compliance, British and American curriculum implementation, inspection readiness and leadership development.</p>
-        </div>
-        <div class="service-card gulf-card">
-          <h3>🇶🇦 Qatar</h3>
-          <p>Supporting Ministry of Education compliance, curriculum implementation, accreditation preparation and whole-school improvement planning.</p>
-        </div>
-        <div class="service-card gulf-card">
-          <h3>🇸🇦 Saudi Arabia</h3>
-          <p>Supporting Ministry of Education requirements, curriculum implementation, accreditation readiness, governance, leadership coaching and quality assurance.</p>
-        </div>
-        <div class="service-card gulf-card">
-          <h3>🇧🇭 Bahrain</h3>
-          <p>Providing support with school foundation, curriculum implementation, governance, accreditation preparation and inspection readiness.</p>
-        </div>
-        <div class="service-card gulf-card">
-          <h3>🇰🇼 Kuwait</h3>
-          <p>Supporting curriculum alignment, teacher development, accreditation support, governance and school improvement planning.</p>
-        </div>
-        <div class="service-card gulf-card">
-          <h3>🇴🇲 Oman</h3>
-          <p>Supporting school leadership, curriculum development, quality assurance, accreditation preparation and sustainable school improvement.</p>
-        </div>
-      </div>
-
-      <div class="service-card" style="margin-top:30px;min-height:auto;">
-        <h3>🌍 International Accreditation</h3>
-        <p>Expert guidance for COBIS, CIS, BSO, Cognia, WASC and International Baccalaureate authorisation, supporting schools through every stage of accreditation and continuous improvement.</p>
-      </div>
-
-      <a href="consultation.html" class="primary-btn">Enquire about Gulf States</a>
-    </div>
-
-   <div id="egypt" class="region-detail">
-  <span class="eyebrow">Egypt</span>
-  <h3>🇪🇬 Egypt</h3>
-  <p>Egypt's international school sector continues to expand rapidly, creating significant demand for globally recognised curricula, strong leadership, accreditation readiness and sustainable school improvement.</p>
-
-  <div class="canada-grid">
-    <div class="service-card">
-      <h3>British Accreditation</h3>
-      <p>Preparation for BSO inspection, COBIS membership and alignment with British educational standards.</p>
-    </div>
-
-    <div class="service-card">
-      <h3>American Accreditation</h3>
-      <p>Guidance through Cognia accreditation, school improvement planning and continuous quality assurance.</p>
-    </div>
-
-    <div class="service-card">
-      <h3>International Baccalaureate</h3>
-      <p>Support with IB candidacy, authorisation, programme implementation and continuous programme development.</p>
-    </div>
-
-    <div class="service-card">
-      <h3>Egyptian Ministry of Education</h3>
-      <p>Support with Ministry compliance, licensing requirements, governance, safeguarding and operational best practice.</p>
-    </div>
-  </div>
-
-  <a href="consultation.html" class="primary-btn">Enquire about Egypt</a>
-</div>
-
-  </div>
-</section>
-
-<section id="accreditation" class="section accreditation-logos">
-  <div class="container">
-    <span class="eyebrow">Accreditation</span>
-    <h2>Trusted Accreditation & Inspection Experience</h2>
-
-    <div class="logo-grid">
-      <div class="logo-card"><img src="images/cobis.png" alt="COBIS logo"><h3>COBIS</h3><p>Council of British International Schools</p><a href="https://www.cobis.org.uk/" target="_blank" class="logo-link">Learn More →</a></div>
-      <div class="logo-card"><img src="images/cis.png" alt="CIS logo"><h3>CIS</h3><p>Council of International Schools</p><a href="https://www.cois.org/" target="_blank" class="logo-link">Learn More →</a></div>
-      <div class="logo-card"><img src="images/cognia.png" alt="Cognia logo"><h3>Cognia</h3><p>American accreditation and school improvement</p><a href="https://www.cognia.org/" target="_blank" class="logo-link">Learn More →</a></div>
-      <div class="logo-card"><img src="images/wasc.png" alt="WASC logo"><h3>WASC</h3><p>Western Association of Schools and Colleges</p><a href="https://www.acswasc.org/" target="_blank" class="logo-link">Learn More →</a></div>
-      <div class="logo-card"><img src="images/ib.png" alt="IB logo"><h3>IB</h3><p>International Baccalaureate</p><a href="https://www.ibo.org/" target="_blank" class="logo-link">Learn More →</a></div>
-      <div class="logo-card"><img src="images/bso.png" alt="BSO logo"><h3>BSO</h3><p>British Schools Overseas</p><a href="https://www.gov.uk/government/publications/british-schools-overseas-inspection-scheme" target="_blank" class="logo-link">Learn More →</a></div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <span class="eyebrow">International Experience</span>
-    <h2>Experience You Can Trust</h2>
-    <div class="stats-grid">
-      <div class="stat-card"><h3>23</h3><p>Experienced Consultants & Specialist Support Staff</p></div>
-      <div class="stat-card"><h3>5</h3><p>International Regions Served</p></div>
-      <div class="stat-card"><h3>12,000+</h3><p>Students Across Schools Supported</p></div>
-      <div class="stat-card"><h3>4,200+</h3><p>Staff Members Led, Mentored & Developed</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="team" class="section">
-  <div class="container">
-    <span class="eyebrow">Our Team</span>
-    <h2>Experienced Educational Leaders</h2>
-    <p class="section-intro">Our leadership team brings a wealth of experience, with consultants who have served as Heads of School, Principals, Executive Leaders, curriculum specialists and senior educational advisers across the globe.</p>
-  </div>
-</section>
-
-<section id="consultation" class="section">
-  <div class="container">
-    <span class="eyebrow">Consultation</span>
-    <h2>Start the Conversation</h2>
-    <p class="section-intro">Tell us what your school needs and EduAdvance will guide you towards the right pathway.</p>
-    <a href="mailto:info@eduadvance.uk" class="primary-btn">Email EduAdvance</a>
-  </div>
-</section>
-
-<section id="contact" class="section">
-  <div class="container">
-    <span class="eyebrow">Contact</span>
-    <h2>Contact EduAdvance</h2>
-    <p>Email: <strong>info@eduadvance.uk</strong></p>
-    <p>Website: <strong>www.eduadvance.uk</strong></p>
-  </div>
-</section>
-
+  </section>
 </main>
 
-<footer>
-  <div class="footer-content">
-    <h3>EduAdvance</h3>
-    <p>Empowering Schools. Inspiring Excellence.</p>
-
-    <div class="footer-links">
-      <a href="mailto:info@eduadvance.uk">Contact</a>
-      <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
-     
-
-    <p class="copyright">© 2026 EduAdvance. All rights reserved.</p>
-  </div>
+<footer class="site-footer">
+  <div class="container footer-inner"><p>© 2026 EduAdvance. All rights reserved.</p><a href="consultation.html">Book a Consultation</a></div>
 </footer>
-
 <script src="js/script.js"></script>
 </body>
 </html>
