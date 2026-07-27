@@ -22,3 +22,13 @@
   color: #b68a2e;
   font-weight: 700;
 }
+.contact-card{
+    display:block;
+    text-decoration:none;
+    color:inherit;
+    cursor:pointer;
+}
+
+.contact-card:hover{
+    transform:translateY(-4px);
+}
