@@ -1,26 +1,28 @@
-document.addEventListener('DOMContentLoaded',()=>{
-  const params=new URLSearchParams(window.location.search);
-  const region=document.getElementById('regionField');
-  if(region&&params.get('region')) region.value=params.get('region');
-  const form=document.getElementById('consultationForm');
-  if(!form)return;
-  form.addEventListener('submit',event=>{
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('consultationForm');
+  const regionInput = document.getElementById('region');
+  const directEmail = document.getElementById('directEmail');
+  const address = 'consultation@eduadvance.uk';
+  if (directEmail) directEmail.href = `mailto:${address}?subject=${encodeURIComponent('Consultation request')}`;
+  const region = new URLSearchParams(window.location.search).get('region');
+  if (regionInput && region) regionInput.value = region;
+  if (!form) return;
+  form.addEventListener('submit', event => {
     event.preventDefault();
-    const data=new FormData(form);
-    const lines=[
-      `Name: ${data.get('name')||''}`,
-      `Job title: ${data.get('role')||''}`,
-      `School/organisation: ${data.get('school')||''}`,
-      `Email: ${data.get('email')||''}`,
-      `Phone: ${data.get('phone')||''}`,
-      `Country/region: ${data.get('region')||''}`,
-      `Preferred contact: ${data.get('contact')||''}`,
-      `Area of support: ${data.get('service')||''}`,
+    const data = new FormData(form);
+    const subject = `Consultation request – ${data.get('school') || 'School enquiry'}`;
+    const body = [
+      `Name: ${data.get('name') || ''}`,
+      `Role / position: ${data.get('role') || ''}`,
+      `School / organisation: ${data.get('school') || ''}`,
+      `Country / region: ${data.get('region') || ''}`,
+      `Email: ${data.get('email') || ''}`,
+      `Telephone: ${data.get('phone') || ''}`,
+      `Area of support: ${data.get('service') || ''}`,
       '',
-      'How can EduAdvance help?',
-      data.get('message')||''
-    ];
-    const subject=`EduAdvance consultation request - ${data.get('school')||data.get('name')||'School enquiry'}`;
-    window.location.href=`mailto:consultation@eduadvance.uk?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(lines.join('\n'))}`;
+      'How EduAdvance can help:',
+      `${data.get('message') || ''}`
+    ].join('\n');
+    window.location.href = `mailto:${address}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   });
 });
