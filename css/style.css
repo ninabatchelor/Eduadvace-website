@@ -32,3 +32,55 @@
 .contact-card:hover{
     transform:translateY(-4px);
 }
+.contact-section .container {
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  width: 100%;
+  margin-top: 32px;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  min-height: 108px;
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 18px;
+  text-decoration: none;
+  color: inherit;
+  overflow-wrap: anywhere;
+}
+
+.contact-card strong {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.contact-card span {
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .contact-section .container {
+    width: min(100% - 28px, 1180px);
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
