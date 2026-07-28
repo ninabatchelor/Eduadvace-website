@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Book a Consultation | EduAdvance</title>
+
+  <link rel="stylesheet" href="css/consultation.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="navbar container">
+      <a class="brand" href="index.html">
+        <img src="images/logo.png" alt="EduAdvance logo">
+        <span>EduAdvance</span>
+      </a>
+
+      <a class="back-link" href="index.html">Back to Home</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="consultation-hero">
+      <div class="container consultation-layout">
+
+        <div class="consultation-copy">
+          <p class="eyebrow">Consultation</p>
+
+          <h1>Book a Consultation</h1>
+
+          <p>
+            Tell us about your school, your priorities and the support you require.
+            Our team will review your enquiry and contact you to arrange a suitable
+            consultation.
+          </p>
+
+          <div class="contact-details">
+            <strong>Email</strong>
+            <a href="https://mail.google.com/mail/u/0/?fs=1&amp;tf=cm&amp;to=consultation@eduadvance.uk&amp;su=Consultation"
+               target="_blank"
+               rel="noopener noreferrer">
+              consultation@eduadvance.uk
+            </a>
+          </div>
+        </div>
+
+        <form class="consultation-form"
+              action="https://formsubmit.co/consultation@eduadvance.uk"
+              method="POST">
+
+          <input type="hidden" name="_subject" value="New EduAdvance Consultation Enquiry">
+          <input type="hidden" name="_captcha" value="false">
+
+          <label for="name">Your Name</label>
+          <input id="name" name="name" type="text" required>
+
+          <label for="school">School or Organisation</label>
+          <input id="school" name="school" type="text" required>
+
+          <label for="email">Email Address</label>
+          <input id="email" name="email" type="email" required>
+
+          <label for="region">Region</label>
+          <select id="region" name="region" required>
+            <option value="">Select a region</option>
+            <option>United Kingdom</option>
+            <option>Gulf States</option>
+            <option>United States</option>
+            <option>Canada</option>
+            <option>Egypt</option>
+            <option>Other</option>
+          </select>
+
+          <label for="service">Support Required</label>
+          <select id="service" name="service" required>
+            <option value="">Select a service</option>
+            <option>School Foundation</option>
+            <option>School Improvement</option>
+            <option>Accreditation Support</option>
+            <option>Executive Search and Recruitment</option>
+            <option>Professional Development</option>
+            <option>Interim Leadership</option>
+            <option>Operations and Technology</option>
+            <option>Curriculum and Resources</option>
+          </select>
+
+          <label for="message">Tell Us What You Need</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+
+          <button type="submit">Submit Enquiry</button>
+
+        </form>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>EduAdvance</strong>
+        <p>Empowering Schools. Inspiring Excellence.</p>
+      </div>
+
+      <p>© 2026 EduAdvance. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
