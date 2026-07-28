@@ -136,29 +136,3 @@
   #contact .contact-grid {
     grid-template-columns: 1fr !important;
   }
-}/* Keep all four contact cards in one row on desktop */
-
-#contact .contact-grid {
-  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
-}
-
-#contact .contact-card {
-  min-width: 0 !important;
-  padding: 22px !important;
-}
-
-#contact .contact-card span {
-  overflow-wrap: anywhere !important;
-}
-
-@media (max-width: 1050px) {
-  #contact .contact-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-  }
-}
-
-@media (max-width: 600px) {
-  #contact .contact-grid {
-    grid-template-columns: 1fr !important;
-  }
-}
